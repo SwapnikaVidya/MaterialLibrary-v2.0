@@ -18,6 +18,8 @@ android {
     }
 }
 
+
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile files('src/main/libs/nineoldandroids-2.4.0.jar')
@@ -26,3 +28,33 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:22.2.0'
     compile 'com.android.support:support-annotations:22.2.0'
 }
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'materialdesignlibrary'
+
+    publishedGroupId = 'com.rba.ui'
+    libraryName = 'MaterialLibrary v2.0'
+    artifact = 'materialdesignlibrary'
+
+    libraryDescription = 'An updated version of all material libraries'
+
+    siteUrl = 'https://github.com/ajaykoppisetty/MaterialLibrary-v2.0'
+    gitUrl = 'https://github.com/ajaykoppisetty/MaterialLibrary-v2.0.git'
+
+    libraryVersion = '0.1.1'
+
+    developerId = 'ajaykoppisetty'
+    developerName = 'Ajay Koppisetty'
+    developerEmail = 'akoppisetty@rapidbizapps.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+
+apply from: 'https://raw.githubusercontent.com/ajaykoppisetty/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/ajaykoppisetty/JCenter/master/bintrayv1.gradle'
+
+
