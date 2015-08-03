@@ -10,7 +10,7 @@
     }
 
     dependencies {
-    compile 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    compile 'com.rba.ui:materialdesignlibrary:0.1.1'
     }
 
 Some components have custom attributes, if you want use them, you must add this line in your xml file in the first component:
